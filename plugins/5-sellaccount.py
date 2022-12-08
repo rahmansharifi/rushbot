@@ -18,7 +18,6 @@ async def _(Client, Query):
             app_version='1.0',
             device_model='Whitebox Server',
             system_version='1.0',
-            proxy=dict(scheme='socks5', hostname='127.0.0.1', port=9150)
         )
         await pyro.connect()
         await Query.message.delete()

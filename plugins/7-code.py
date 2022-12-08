@@ -20,7 +20,6 @@ async def _(Client, Query):
             device_model='Whitebox Server',
             system_version='1.0',
             session_string=Obj['session'],
-            proxy=dict(scheme='socks5', hostname='127.0.0.1', port=9150)
         )
         await pyro.connect()
         Codes = pyro.get_chat_history(777000,1)

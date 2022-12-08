@@ -10,7 +10,6 @@ app = Client(
     system_version='1.0',
     bot_token='5988252315:AAFOC9dyVKMWrvSVkY4sNT9wpdS3mUrHlT4',
     plugins=dict(root='plugins'),
-    proxy=dict(scheme='socks5', hostname='127.0.0.1', port=9150)
 )
 
 app.start()
